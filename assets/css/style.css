@@ -11,6 +11,15 @@ text-decoration: none;
 .mobile-logo{
 	display: none;
 }
+
+.starrating {
+	margin-top: 50px;
+
+}
+
+.alignstar {
+
+}
 .navbar {
   padding:2rem;
   margin-bottom:2rem;
@@ -1353,7 +1362,11 @@ text-decoration: none;
 	width: 1.3rem;
 	display: inline;
 }
-
+.star{
+	margin-left:85px;
+	margin-top: -20px;
+	padding-bottom: 10px;
+}
 /* end */
 
 @media only screen and (min-device-width : 320px)
@@ -1382,5 +1395,13 @@ body {
 @media (max-width:420px){
 	#staricon{
 	    margin-left: 120px;
+	}
+	.starrating {
+		margin-rih: 5px;
+	}
+
+	.star{
+		margin-left:40px;
+
 	}
 }
