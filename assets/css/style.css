@@ -1363,7 +1363,7 @@ text-decoration: none;
 	display: inline;
 }
 .star{
-	margin-left:85px;
+	margin-left:155px;
 	margin-top: -20px;
 	padding-bottom: 10px;
 }
@@ -1401,7 +1401,7 @@ body {
 	}
 
 	.star{
-		margin-left:30px;
+		margin-left:60px;
 
 	}
 }
