@@ -1038,6 +1038,11 @@ text-decoration: none;
 	line-height:2.5rem;
 	display: inline-flex;
 }
+
+#staricon{
+	margin-top: 300px;
+	margin-left: 190px;
+}
 .color4{
 	background-color: #EA6060;
 	color: white;
@@ -1360,6 +1365,8 @@ and (max-device-width: 767px) {
 		display: none;
 	}
 
+
+
 	.discovers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
@@ -1371,4 +1378,9 @@ and (max-device-width: 767px) {
 body {
 	line-height: 1.0;
 }
+}
+@media (max-width:420px){
+	#staricon{
+	    margin-left: 120px;
+	}
 }
