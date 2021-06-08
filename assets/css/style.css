@@ -12,11 +12,63 @@ text-decoration: none;
 	display: none;
 }
 
-.starrating {
-	margin-top: 50px;
+/* star rating */
+.rating {
+      float:center;
+			margin-left: 30px;
 
-}
+    }
 
+    /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+      follow these rules. Every browser that supports :checked also supports :not(), so
+      it doesn’t make the test unnecessarily selective */
+    .rating:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+
+    .rating:not(:checked) > label {
+        float:right;
+        width:1em;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:200%;
+        /* line-height:1.2; */
+        color:#ddd;
+    }
+
+    .rating:not(:checked) > label:before {
+        content: '★ ';
+    }
+
+    .rating > input:checked ~ label {
+        color: dodgerblue;
+
+    }
+
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: dodgerblue;
+
+    }
+
+    .rating > input:checked + label:hover,
+    .rating > input:checked + label:hover ~ label,
+    .rating > input:checked ~ label:hover,
+    .rating > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+        color: dodgerblue;
+
+    }
+
+    .rating > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
 .alignstar {
 
 }
@@ -1392,16 +1444,179 @@ body {
 	line-height: 1.0;
 }
 }
-@media (max-width:420px){
-	#staricon{
-	    margin-left: 120px;
-	}
-	.starrating {
-		margin-rih: 5px;
-	}
 
-	.star{
-		margin-left:60px;
 
-	}
+
+@media (max-width:1100px){
+	.rating {
+	      float:center;
+				margin-left: 50px;
+
+	    }
+
+			.rating:not(:checked) > label {
+	        float:right;
+	        width:1em;
+	        /* padding:0 .1em; */
+	        overflow:hidden;
+	        white-space:nowrap;
+	        cursor:pointer;
+	        font-size:200%;
+	        /* line-height:1.2; */
+	        color:#ddd;
+	    }
+
+
+}
+
+@media(max-width:800px){
+	.rating {
+	      float:center;
+				margin-left: 10px;
+
+	    }
+
+			.rating:not(:checked) > label {
+	        float:right;
+	        width:1em;
+	        /* padding:0 .1em; */
+	        overflow:hidden;
+	        white-space:nowrap;
+	        cursor:pointer;
+	        font-size:130%;
+	        /* line-height:1.2; */
+	        color:#ddd;
+	    }
+}
+@media only screen and (min-width: 400px) and (max-width: 770px) {
+
+	.rating {
+	      float:center;
+				margin-left: 50px;
+
+	    }
+
+			.rating:not(:checked) > label {
+	        float:right;
+	        width:1em;
+	        /* padding:0 .1em; */
+	        overflow:hidden;
+	        white-space:nowrap;
+	        cursor:pointer;
+	        font-size:250%;
+	        /* line-height:1.2; */
+	        color:#ddd;
+	    }
+
+}
+@media only screen and (min-width: 540px) and (max-width: 550px) {
+
+	.rating {
+	      float:center;
+				margin-left: 10px;
+
+	    }
+
+			.rating:not(:checked) > label {
+	        float:right;
+	        width:1em;
+	        /* padding:0 .1em; */
+	        overflow:hidden;
+	        white-space:nowrap;
+	        cursor:pointer;
+	        font-size:130%;
+	        /* line-height:1.2; */
+	        color:#ddd;
+	    }
+
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 608px) {
+
+	.rating {
+	      float:center;
+				margin-left: 20px;
+
+	    }
+
+			.rating:not(:checked) > label {
+	        float:right;
+	        width:1em;
+	        /* padding:0 .1em; */
+	        overflow:hidden;
+	        white-space:nowrap;
+	        cursor:pointer;
+	        font-size:130%;
+	        /* line-height:1.2; */
+	        color:#ddd;
+	    }
+
+}
+
+@media only screen and (min-width: 280px) and (max-width: 408px) {
+
+	.rating {
+	      float:center;
+				margin-left: 10px;
+
+	    }
+
+			.rating:not(:checked) > label {
+	        float:right;
+	        width:1em;
+	        /* padding:0 .1em; */
+	        overflow:hidden;
+	        white-space:nowrap;
+	        cursor:pointer;
+	        font-size:130%;
+	        /* line-height:1.2; */
+	        color:#ddd;
+	    }
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 320px) {
+
+	.rating {
+	      float:center;
+				margin-left: 10px;
+
+	    }
+
+			.rating:not(:checked) > label {
+	        float:right;
+	        width:1em;
+	        /* padding:0 .1em; */
+	        overflow:hidden;
+	        white-space:nowrap;
+	        cursor:pointer;
+	        font-size:110%;
+	        /* line-height:1.2; */
+	        color:#ddd;
+	    }
+
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 278px) {
+
+	.rating {
+	      float:center;
+				margin-left: 30px;
+
+	    }
+
+			.rating:not(:checked) > label {
+	        float:right;
+	        width:1em;
+	        /* padding:0 .1em; */
+	        overflow:hidden;
+	        white-space:nowrap;
+	        cursor:pointer;
+	        font-size:200%;
+	        /* line-height:1.2; */
+	        color:#ddd;
+	    }
+
 }
