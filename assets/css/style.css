@@ -1444,8 +1444,27 @@ body {
 	line-height: 1.0;
 }
 }
+@media (max-width:1920px){
 
+	.rating {
+				float:center;
+				margin-left: 0px;
 
+			}
+
+			.rating:not(:checked) > label {
+					float:right;
+					width:1em;
+					/* padding:0 .1em; */
+					overflow:hidden;
+					white-space:nowrap;
+					cursor:pointer;
+					font-size:170%;
+					/* line-height:1.2; */
+					color:#ddd;
+			}
+
+}
 
 @media (max-width:1100px){
 	.rating {
