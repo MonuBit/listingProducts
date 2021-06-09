@@ -1450,7 +1450,7 @@ body {
 @media (max-width:1100px){
 	.rating {
 	      float:center;
-				margin-left: 50px;
+				margin-left: 0px;
 
 	    }
 
@@ -1461,7 +1461,7 @@ body {
 	        overflow:hidden;
 	        white-space:nowrap;
 	        cursor:pointer;
-	        font-size:200%;
+	        font-size:170%;
 	        /* line-height:1.2; */
 	        color:#ddd;
 	    }
