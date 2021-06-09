@@ -1448,7 +1448,7 @@ body {
 
 	.rating {
 				float:center;
-				margin-left: -20px;
+				margin-left: 0px;
 
 			}
 
@@ -1459,7 +1459,7 @@ body {
 					overflow:hidden;
 					white-space:nowrap;
 					cursor:pointer;
-					font-size:100%;
+					font-size:170%;
 					/* line-height:1.2; */
 					color:#ddd;
 			}
@@ -1480,7 +1480,7 @@ body {
 	        overflow:hidden;
 	        white-space:nowrap;
 	        cursor:pointer;
-	        font-size:170%;
+	        font-size:130%;
 	        /* line-height:1.2; */
 	        color:#ddd;
 	    }
